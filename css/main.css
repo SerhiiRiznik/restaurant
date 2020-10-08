@@ -5,6 +5,7 @@
 @import url("footer.css");
 /*--------------------*/
 /*-Google_Fonts-*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Sansita+Swashed:wght@300;400;700&display=swap");
 /*--------------------*/
 /*Обнуление*/
 * {
@@ -80,4 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.h1 {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: "Montserrat", serif;
+}
 /*# sourceMappingURL=main.css.map */
