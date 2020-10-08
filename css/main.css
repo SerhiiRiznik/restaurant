@@ -81,9 +81,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.h1 {
-  font-weight: 900;
-  font-size: 40px;
-  font-family: "Montserrat", serif;
+header {
+  background: url(/img/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.container .nav {
+  padding-top: 60px;
+}
+
+.container .nav ul {
+  margin: 0 0 0 auto;
+  width: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .nav ul a {
+  margin-right: 25px;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #afc67b;
+  text-align: left;
+  opacity: 0.78;
+}
+
+.container .nav ul a:hover {
+  color: #d0f37f;
+  border-bottom: 2px solid #d0f37f;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.next-page {
+  height: 500px;
+  width: 100%;
+  background-color: #afc67b;
 }
 /*# sourceMappingURL=main.css.map */

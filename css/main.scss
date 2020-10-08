@@ -52,8 +52,53 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+$color_Main:  rgb( 175, 198, 123 );
+$color_subMain: rgb(208, 243, 127);
+header{
+   background: url(/img/header_bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 100%;
+}
+.container{
+   width: 100%;
+   max-width: 1450px;
+   margin: 0 auto;
+   .nav{
+        
+        padding-top: 60px;
+
+      ul{
+         margin: 0 0 0 auto;
+         width: 740px;
+          display: flex;
+          justify-content: flex-end;
+
+         
+      a{     
+         margin-right: 25px;         
+         font-size: 30px;
+         font-family: "Montserrat";
+         color: $color_main;
+         text-align: left;
+         opacity: 0.78;
+         &:hover{
+            color: $color_subMain;
+            border-bottom: 2px solid $color_subMain;
+            transition: color .3s;
+         }
+      }
+      }
+   }
+   
+}
 
 
 
-
-
+.next-page{
+   height: 500px;
+   width: 100%;
+   background-color: rgb( 175, 198, 123 );
+}
