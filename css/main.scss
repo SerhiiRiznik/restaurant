@@ -1,9 +1,9 @@
 /*Подключения css-стили*/
-@import url("header.css");
+// @import url("header.css");
 
-@import url("style.css");
+// @import url("style.css");
 
-@import url("footer.css");
+// @import url("footer.css");
 /*--------------------*/
 
 /*-Google_Fonts-*/
@@ -52,7 +52,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
-$color_Main:  rgb( 175, 198, 123 );
+$color_main:  rgb( 155, 175, 109 );
 $color_subMain: rgb(208, 243, 127);
 header{
    background: url(/img/header_bg.png);
@@ -62,15 +62,65 @@ header{
    background-attachment: fixed;
    height: 100%;
 }
+
 .container{
    width: 100%;
    max-width: 1450px;
    margin: 0 auto;
+   .content{
+      height: 100%;
+      margin: 0 0 0 auto;
+      width: 380px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      .header__logo{
+            width: 120px;
+            margin-top: 80px;
+         img{
+            width: 120px;
+         }        
+      }
+      .tittle{
+         text-transform: uppercase;
+         color: $color_main;
+         font-family: "Montserrat";
+         padding: 80px 0;
+      p{
+         
+         font-size: 28px;
+         font-weight: 400;
+            
+      }
+      h2{   
+         font-size: 48px;
+         font-weight: bold;
+      }
+      }
+      .header__link{    
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 280px;
+         height: 90px;
+         font-size: 48px;
+         font-family: "Montserrat";
+         color: $color_main;
+         background: rgba(155, 175, 109, .3);
+         transition: .3s ease;
+         &:hover{
+            color: $color_subMain;
+            background: rgba(155, 175, 109, .5);
+
+         }
+      }
+   }
    .nav{
         
         padding-top: 60px;
 
       ul{
+         cursor: pointer;
          margin: 0 0 0 auto;
          width: 740px;
           display: flex;

@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /*Подключения css-стили*/
-@import url("header.css");
-@import url("style.css");
-@import url("footer.css");
 /*--------------------*/
 /*-Google_Fonts-*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Sansita+Swashed:wght@300;400;700&display=swap");
@@ -86,6 +83,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
 }
 
@@ -95,11 +93,79 @@ header {
   margin: 0 auto;
 }
 
+.container .content {
+  height: 100%;
+  margin: 0 0 0 auto;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content .header__logo {
+  width: 120px;
+  margin-top: 80px;
+}
+
+.container .content .header__logo img {
+  width: 120px;
+}
+
+.container .content .tittle {
+  text-transform: uppercase;
+  color: #9baf6d;
+  font-family: "Montserrat";
+  padding: 80px 0;
+}
+
+.container .content .tittle p {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.container .content .tittle h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.container .content .header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 280px;
+  height: 90px;
+  font-size: 48px;
+  font-family: "Montserrat";
+  color: #9baf6d;
+  background: rgba(155, 175, 109, 0.3);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container .content .header__link:hover {
+  color: #d0f37f;
+  background: rgba(155, 175, 109, 0.5);
+}
+
 .container .nav {
   padding-top: 60px;
 }
 
 .container .nav ul {
+  cursor: pointer;
   margin: 0 0 0 auto;
   width: 740px;
   display: -webkit-box;
@@ -114,7 +180,7 @@ header {
   margin-right: 25px;
   font-size: 30px;
   font-family: "Montserrat";
-  color: #afc67b;
+  color: #9baf6d;
   text-align: left;
   opacity: 0.78;
 }
