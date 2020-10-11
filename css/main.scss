@@ -62,12 +62,9 @@ header{
    background-position: center;
    background-size: cover;
    background-attachment: fixed;
-   // height: 1000px;
-   // max-height: 100%;
-
    max-height: 100%;
    padding-bottom: 100px;
-   
+   box-shadow: inset 0px -30px 50px 5px black
 }
 
 @media(max-width: 800px){
@@ -86,7 +83,6 @@ header{
    height: 100%;
    .content{
       margin: 0 0 0 60%;
-      // width: 380px;
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
@@ -132,47 +128,38 @@ header{
       }
    }
    .nav{
-        
         padding-top: 60px;
-
       ul{
          cursor: pointer;
          margin: 0 0 0 auto;
          width: 740px;
           display: flex;
           justify-content: flex-end;
-
-         
-      a{     
-         margin-right: 25px;         
-         font-size: 30px;
-         font-family: "Montserrat";
-         color: $color_main;
-         text-align: left;
-         opacity: 0.78;
-         &:hover{
-            color: $color_subMain;
-            border-bottom: 2px solid $color_subMain;
-            transition: color .3s;
+         a{     
+            margin-right: 25px;         
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: $color_main;
+            text-align: left;
+            opacity: 0.78;
+            &:hover{
+               color: $color_subMain;
+               border-bottom: 2px solid $color_subMain;
+               transition: color .3s;
+            }
          }
-      }
       }
    }
    .actually__cook{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
-
-
+      box-shadow: inset 20px 20px 50px -10px rgba(0,0,0,1);
       min-height: 450px;
-
       background: url(../img/sectionOne.png) no-repeat 100% 100%;
-
       .actually__cook__text{
          width: 45%;
-         margin:0 5%;
-         // max-width: 540px;        
+         margin:0 5%;      
          text-align: left;
          h2{
             font-family: $Sansita;
@@ -195,7 +182,6 @@ header{
       height: auto;
       padding: 100px 0;
       background-color: rgba( 175, 198, 123, .5);
-      // background-color: rgba( 0,0,0, .8);
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -217,14 +203,12 @@ header{
          //    position: absolute;
          //    top: -15px;
          //    left: 0;
-         //    background-image: url(/img/brush.png);
+         //    background-image: url(../img/brush.png);
          //    background-repeat: no-repeat;
          //    background-size: cover;
          //    width: 28px;
          //    height: 35px;
-
          // }
-
          } 
          .scills__subtittle{
             font-size: 16px;
@@ -234,6 +218,9 @@ header{
       }
    }
 
+
+
+   
 .next-page{
    height: 500px;
    width: 100%;
