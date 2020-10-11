@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 $color_main:  rgb( 155, 175, 109 );
 $color_subMain: rgb(208, 243, 127);
 header{
-   background: url(./img/header_bg.png);
+   background: url(../img/header_bg.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -167,7 +167,7 @@ header{
 
       min-height: 450px;
 
-      background: url(/img/sectionOne.png) no-repeat 100% 100%;
+      background: url(../img/sectionOne.png) no-repeat 100% 100%;
 
       .actually__cook__text{
          width: 45%;
