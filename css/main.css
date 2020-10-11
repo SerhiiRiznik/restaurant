@@ -37,6 +37,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: #212121;
 }
 
 input, button, textarea {
@@ -84,19 +85,31 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
+  max-height: 100%;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+  .content {
+    margin: 0 auto !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .container {
   width: 100%;
   max-width: 1450px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container .content {
-  height: 100%;
-  margin: 0 0 0 auto;
-  width: 380px;
+  margin: 0 0 0 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +203,80 @@ header {
   border-bottom: 2px solid #d0f37f;
   -webkit-transition: color .3s;
   transition: color .3s;
+}
+
+.container .actually__cook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 450px;
+  background: url(/img/sectionOne.png) no-repeat 100% 100%;
+}
+
+.container .actually__cook .actually__cook__text {
+  width: 45%;
+  margin: 0 5%;
+  text-align: left;
+}
+
+.container .actually__cook .actually__cook__text h2 {
+  font-family: "Sansita Swashed", serif;
+  font-size: 30px;
+  color: #9baf6d;
+  margin-bottom: 40px;
+}
+
+.container .actually__cook .actually__cook__text p {
+  font-size: 18.75px;
+  font-family: "Montserrat" light;
+  color: white;
+  line-height: 1.556;
+}
+
+.scills__wrap {
+  height: auto;
+  padding: 100px 0;
+  background-color: rgba(175, 198, 123, 0.5);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scills__wrap .scills__content {
+  width: 30%;
+  margin: 0 10px;
+  text-align: left;
+  color: #eaeaea;
+}
+
+.scills__wrap .scills__content .scills__tittle {
+  position: relative;
+  padding: 30px 0;
+  font-size: 25px;
+  font-family: "Sansita Swashed", serif;
+}
+
+.scills__wrap .scills__content .scills__subtittle {
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+  line-height: 1.5;
 }
 
 .next-page {
