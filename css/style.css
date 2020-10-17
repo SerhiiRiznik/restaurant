@@ -105,7 +105,7 @@ header {
 
 .container {
   width: 100%;
-  max-width: 1450px;
+  max-width: 1780px;
   margin: 0 auto;
   height: 100%;
 }
@@ -208,6 +208,7 @@ header {
 }
 
 .container .actually__cook {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,10 +218,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: inset 20px 20px 50px -10px black;
-          box-shadow: inset 20px 20px 50px -10px black;
   min-height: 450px;
-  background: url(../img/sectionOne.png) no-repeat 100% 100%;
+  background: url(../img/sectionOne2.png) no-repeat 100% 100%;
 }
 
 .container .actually__cook .actually__cook__text {
@@ -246,26 +245,21 @@ header {
 .scills__wrap {
   height: auto;
   padding: 100px 0;
-  background-color: rgba(175, 198, 123, 0.5);
-  width: 100%;
+  background-color: rgba(175, 198, 123, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .scills__wrap .scills__content {
-  width: 30%;
-  margin: 0 10px;
+  width: 33.3333%;
+  padding: 0 100px;
   text-align: left;
   color: #eaeaea;
 }
@@ -281,6 +275,62 @@ header {
   font-size: 16px;
   font-family: "Montserrat", serif;
   line-height: 1.5;
+}
+
+.tradition .tradition__item__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 80px 120px;
+  background: rgba(175, 198, 123, 0.3);
+}
+
+.tradition .tradition__item__wrap .tradition__item {
+  width: 50%;
+  min-width: 530px;
+  height: 275px;
+  border: 1px solid #212121;
+}
+
+.tradition .tradition__item__wrap .tradition__item:nth-child(1) {
+  height: 200px;
+  width: 100%;
+}
+
+.tradition .tradition__item__wrap .tradition__item:nth-child(1) h2 {
+  padding-top: 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Sansita Swashed", serif;
+  color: #9baf6d;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.tradition .tradition__item__wrap .tradition__item:nth-child(1) p {
+  font-size: 16.667px;
+  font-family: "Montserrat", serif;
+  color: #eaeaea;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fon img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .next-page {

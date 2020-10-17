@@ -78,7 +78,7 @@ header{
 }
 .container{
    width: 100%;
-   max-width: 1450px;
+   max-width: 1780px;
    margin: 0 auto;
    height: 100%;
    .content{
@@ -151,12 +151,12 @@ header{
       }
    }
    .actually__cook{
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: inset 20px 20px 50px -10px rgba(0,0,0,1);
       min-height: 450px;
-      background: url(../img/sectionOne.png) no-repeat 100% 100%;
+      background: url(../img/sectionOne2.png) no-repeat 100% 100%;
       .actually__cook__text{
          width: 45%;
          margin:0 5%;      
@@ -168,7 +168,6 @@ header{
             margin-bottom: 40px;   
          }
          p{
-            
             font-size: 18.75px;
             font-family: "Montserrat" light;
             color: rgb( 255, 255, 255 );
@@ -179,47 +178,96 @@ header{
 }
 
 .scills__wrap{
-      height: auto;
-      padding: 100px 0;
-      background-color: rgba( 175, 198, 123, .5);
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      .scills__content{
-         width: 30%;
-         margin: 0 10px;
-         text-align: left;
-         color: rgb( 234, 234, 234 );
-         .scills__tittle{
-            position: relative;
-            padding: 30px 0;
-            font-size: 25px;
-            font-family: $Sansita;
-         //    &:after{
-         //    content: '';
-         //    position: absolute;
-         //    top: -15px;
-         //    left: 0;
-         //    background-image: url(../img/brush.png);
-         //    background-repeat: no-repeat;
-         //    background-size: cover;
-         //    width: 28px;
-         //    height: 35px;
-         // }
-         } 
-         .scills__subtittle{
-            font-size: 16px;
-            font-family: $Montserrat;
-            line-height: 1.5;
-         }      
+   height: auto;
+   padding: 100px 0;
+   background-color: rgba( 175, 198, 123, .3);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: center;
+   .scills__content{
+      width: 33.3333%;
+      padding: 0 100px;
+      text-align: left;
+      color: rgb( 234, 234, 234 );
+      .scills__tittle{
+         position: relative;
+         padding: 30px 0;
+         font-size: 25px;
+         font-family: $Sansita;
+      } 
+      .scills__subtittle{
+         font-size: 16px;
+         font-family: $Montserrat;
+         line-height: 1.5;
+      }      
+   }
+}
+
+.tradition{
+
+   .tradition__item__wrap {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin: 80px 120px ;
+   background: rgba( 175, 198, 123, .3);
+      .tradition__item{
+         width: 50%;
+         min-width: 530px;
+         height: 275px;
+         border: 1px solid #212121;
+            &:nth-child(1){
+            height: 200px;
+            width: 100%;
+
+            h2{
+               padding-top: 65px;
+               align-items: center;
+               font-size: 25px;
+               font-weight: 600;
+               font-family: $Sansita;
+               color: $color_main;
+               line-height: 1.33;
+               text-align: center;
+            }
+            p{
+               font-size: 16.667px;
+               font-family: $Montserrat;
+               color: rgb( 234, 234, 234 );
+               line-height: 1.5;
+               text-align: center;
+               text-transform: uppercase;
+            }
+         }
       }
    }
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.fon{
+   img{
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      left: 50%;
+      transform: translate(-50%,0);
+   }
+}
    
 .next-page{
    height: 500px;
