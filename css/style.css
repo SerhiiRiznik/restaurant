@@ -40,6 +40,10 @@ html, body {
   background: #212121;
 }
 
+html p, body p {
+  color: #eaeaea;
+}
+
 input, button, textarea {
   font-family: inherit;
 }
@@ -86,9 +90,9 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  padding-bottom: 100px;
-  -webkit-box-shadow: inset 0px -30px 50px 5px black;
-          box-shadow: inset 0px -30px 50px 5px black;
+  max-height: 1000px;
+  -webkit-box-shadow: inset 0px -22px 45px 0px black;
+          box-shadow: inset 0px -22px 45px 0px black;
 }
 
 @media (max-width: 800px) {
@@ -103,15 +107,25 @@ header {
   }
 }
 
+@media (max-width: 550px) {
+  .tradition__item {
+    width: 100% !important;
+    min-width: 100% !important;
+    border-bottom: 1px solid #afc67b;
+  }
+}
+
 .container {
   width: 100%;
-  max-width: 1780px;
+  max-width: 1760px;
   margin: 0 auto;
   height: 100%;
+  padding: 0 10px;
 }
 
 .container .content {
-  margin: 0 0 0 60%;
+  margin-left: auto;
+  max-width: 540px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +149,7 @@ header {
 
 .container .content .tittle {
   text-transform: uppercase;
-  color: #9baf6d;
+  color: #afc67b;
   font-family: "Montserrat";
   padding: 80px 0;
 }
@@ -164,8 +178,8 @@ header {
   height: 90px;
   font-size: 48px;
   font-family: "Montserrat";
-  color: #9baf6d;
-  background: rgba(155, 175, 109, 0.3);
+  color: #afc67b;
+  background: rgba(78, 83, 66, 0.5);
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -186,16 +200,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container .nav ul a {
   margin-right: 25px;
   font-size: 30px;
   font-family: "Montserrat";
-  color: #9baf6d;
+  color: #afc67b;
   text-align: left;
   opacity: 0.78;
 }
@@ -223,21 +236,21 @@ header {
 }
 
 .container .actually__cook .actually__cook__text {
-  width: 45%;
-  margin: 0 5%;
+  width: 50%;
+  margin-left: 5%;
   text-align: left;
 }
 
 .container .actually__cook .actually__cook__text h2 {
   font-family: "Sansita Swashed", serif;
   font-size: 30px;
-  color: #9baf6d;
+  color: #afc67b;
   margin-bottom: 40px;
 }
 
 .container .actually__cook .actually__cook__text p {
   font-size: 18.75px;
-  font-family: "Montserrat" light;
+  font-family: "Montserrat", serif;
   color: white;
   line-height: 1.556;
 }
@@ -245,7 +258,6 @@ header {
 .scills__wrap {
   height: auto;
   padding: 100px 0;
-  background-color: rgba(175, 198, 123, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,31 +289,57 @@ header {
   line-height: 1.5;
 }
 
+.bg-green {
+  background: rgba(78, 83, 66, 0.5);
+}
+
+.tradition .tradition__tittle {
+  margin-top: 85px;
+  padding: 65px 10px;
+  text-align: center;
+}
+
+.tradition .tradition__tittle h2 {
+  font-size: 25.067px;
+  font-family: "Sansita Swashed", serif;
+  color: #afc67b;
+}
+
+.tradition .tradition__tittle p {
+  font-size: 16.667px;
+  font-family: "Montserrat", serif;
+  color: #eaeaea;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
 .tradition .tradition__item__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 80px 120px;
-  background: rgba(175, 198, 123, 0.3);
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-bottom: 85px;
 }
 
 .tradition .tradition__item__wrap .tradition__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
-  min-width: 530px;
-  height: 275px;
-  border: 1px solid #212121;
+  min-width: 550px;
 }
 
-.tradition .tradition__item__wrap .tradition__item:nth-child(1) {
-  height: 200px;
-  width: 100%;
+.tradition .tradition__item__wrap .tradition__item:nth-child(4n+4), .tradition .tradition__item__wrap .tradition__item:nth-child(4n+3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.tradition .tradition__item__wrap .tradition__item:nth-child(1) h2 {
+.tradition .tradition__item__wrap .tradition__item h2 {
   padding-top: 65px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -309,18 +347,223 @@ header {
   font-size: 25px;
   font-weight: 600;
   font-family: "Sansita Swashed", serif;
-  color: #9baf6d;
+  color: #afc67b;
   line-height: 1.33;
   text-align: center;
 }
 
-.tradition .tradition__item__wrap .tradition__item:nth-child(1) p {
-  font-size: 16.667px;
+.tradition .tradition__item__wrap .tradition__item p {
+  font-size: 25px;
   font-family: "Montserrat", serif;
   color: #eaeaea;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
+}
+
+.tradition .tradition__item__wrap .tradition__item img {
+  min-width: 50%;
+}
+
+.tradition .tradition__item__wrap .tradition__item .tradition__item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0 10px;
+  font-family: "Sansita Swashed", serif;
+}
+
+.tradition .tradition__item__wrap .tradition__item .tradition__item__info h3 {
+  font-size: 26px;
+  color: #afc67b;
+}
+
+.tradition .tradition__item__wrap .tradition__item .tradition__item__info p {
+  padding: 25px 0;
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+  color: #e8e8e8;
+}
+
+.tradition .tradition__item__wrap .tradition__item .tradition__item__info span {
+  font-size: 22px;
+  color: #e8e8e8;
+  text-transform: uppercase;
+}
+
+.keep__things__simple {
+  padding-bottom: 95px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.keep__things__simple h2 {
+  padding-top: 110px;
+  font-size: 41px;
+  font-family: "Sansita Swashed", serif;
+  color: #afc67b;
+}
+
+.keep__things__simple p {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 35px 0 20px;
+  font-size: 20px;
+  font-family: "Montserrat", serif;
+  color: #dcdcdb;
+}
+
+.keep__things__simple span {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #afc67b;
+  -webkit-transform: rotate3d(2, 5, -1, 40deg);
+          transform: rotate3d(2, 5, -1, 40deg);
+}
+
+.discover__menu-bg {
+  background: url(../img/keepThingsSimpl_bg.jpg) no-repeat 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.discover__menu-bg .discover__menu .menu__tittle {
+  padding-top: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.discover__menu-bg .discover__menu .menu__tittle h2 {
+  font-size: 150px;
+  font-family: "GoodDog";
+}
+
+.discover__menu-bg .discover__menu .menu__tittle p {
+  font-size: 60px;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+}
+
+.discover__menu-bg .discover__menu .menu__list {
+  padding-bottom: 250px;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item .menu__list__item__info {
+  text-align: left;
+  color: #e7e7e7;
+  max-width: 350px;
+  padding-left: 10px;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item .menu__list__item__info h3 {
+  font-size: 22px;
+  font-family: "Sansita Swashed", serif;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item .menu__list__item__info p {
+  padding-top: 20px;
+  font-size: 16px;
+  font-family: "Montserrat", serif;
+}
+
+.discover__menu-bg .discover__menu .menu__list .menu__list__wrap .menu__list__item .menu__list__item__info p span {
+  color: #fff;
+}
+
+.form__tittle {
+  padding: 45px 0;
+  font-size: 65px;
+  font-family: "Sansita Swashed", serif;
+  color: white;
+  text-align: center;
+}
+
+.form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__wrap .form__item {
+  position: relative;
+  text-align: center;
+  width: 33.333%;
+  color: #fff;
+  padding-bottom: 45px;
+}
+
+.form__wrap .form__item input, .form__wrap .form__item select {
+  width: 230px;
+  height: 30px;
+  padding: 0 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.form__wrap .form__item input:internal-autofill-selected, .form__wrap .form__item select:internal-autofill-selected {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.form__wrap .form__item input option, .form__wrap .form__item select option {
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.form__wrap .form__item label, .form__wrap .form__item span {
+  position: absolute;
+  top: -20px;
 }
 
 .fon img {
