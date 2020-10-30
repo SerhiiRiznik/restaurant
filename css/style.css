@@ -152,7 +152,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
