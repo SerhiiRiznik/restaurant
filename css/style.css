@@ -108,6 +108,9 @@ header {
 }
 
 @media (max-width: 1100px) {
+  .content {
+    display: block !important;
+  }
   .tradition__item {
     width: 100% !important;
     border-bottom: 1px solid #cccccc;
@@ -115,8 +118,24 @@ header {
 }
 
 @media (max-width: 600px) {
+  .menu__tittle {
+    padding-top: 30px !important;
+  }
   .menu__tittle h2 {
-    font-size: 90px !important;
+    font-size: 75px !important;
+  }
+  .menu__tittle p {
+    font-size: 40px !important;
+  }
+  .footer__row {
+    padding: 20px 10px !important;
+  }
+  .actually__cook {
+    background: none !important;
+  }
+  .actually__cook .actually__cook__text {
+    width: 100% !important;
+    margin: 0 10px !important;
   }
 }
 
@@ -133,6 +152,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 100px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -189,8 +209,11 @@ header {
 }
 
 .container .content .header__link:hover {
-  color: #d0f37f;
-  background: rgba(155, 175, 109, 0.5);
+  border: 2px solid #afc67b;
+  color: #fff;
+  -webkit-box-shadow: inset 280px 0px 0px 0px #afc67b;
+          box-shadow: inset 280px 0px 0px 0px #afc67b;
+  border-radius: 10px;
 }
 
 .container .nav {
@@ -224,7 +247,11 @@ header {
   transition: color .3s;
 }
 
-.container .actually__cook {
+.What-we-cook {
+  padding: 0;
+}
+
+.What-we-cook .actually__cook {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,20 +266,20 @@ header {
   background: url(../img/sectionOne2.png) no-repeat 100% 100%;
 }
 
-.container .actually__cook .actually__cook__text {
+.What-we-cook .actually__cook .actually__cook__text {
   width: 50%;
   margin-left: 5%;
   text-align: left;
 }
 
-.container .actually__cook .actually__cook__text h2 {
+.What-we-cook .actually__cook .actually__cook__text h2 {
   font-family: "Sansita Swashed", serif;
   font-size: 30px;
   color: #afc67b;
   margin-bottom: 40px;
 }
 
-.container .actually__cook .actually__cook__text p {
+.What-we-cook .actually__cook .actually__cook__text p {
   font-size: 18.75px;
   font-family: "Montserrat", serif;
   color: white;
@@ -275,11 +302,22 @@ header {
 }
 
 .scills__wrap .scills__content {
+  position: relative;
+  top: 0;
   padding: 10px 10px;
   width: 33.3333%;
   min-width: 300px;
   text-align: center;
   color: #eaeaea;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.scills__wrap .scills__content:hover {
+  top: -5px;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 1px #afc67b;
+          box-shadow: 0px 0px 10px 1px #afc67b;
 }
 
 .scills__wrap .scills__content .scills__tittle {
@@ -297,6 +335,10 @@ header {
 
 .bg-green {
   background: rgba(78, 83, 66, 0.5);
+}
+
+.tradition {
+  padding: 0;
 }
 
 .tradition .tradition__tittle {
@@ -323,8 +365,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
   margin-bottom: 85px;
@@ -335,7 +378,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  max-width: 550px;
 }
 
 .tradition .tradition__item__wrap .tradition__item:nth-child(4n+4), .tradition .tradition__item__wrap .tradition__item:nth-child(4n+3) {
@@ -553,8 +595,8 @@ header {
   cursor: pointer;
   font-size: 20px;
   text-transform: uppercase;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .form__wrap .btn-submit:hover {
@@ -591,6 +633,11 @@ header {
 .form__wrap .form__item input option, .form__wrap .form__item select option {
   color: black;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.form__wrap .form__item input:focus, .form__wrap .form__item select:focus {
+  background: #afc67b;
+  color: #000;
 }
 
 .form__wrap .form__item label, .form__wrap .form__item span {
@@ -630,21 +677,17 @@ header {
 
 .news .news__items {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   min-width: 0;
+  max-width: 1095px;
+  margin: 0 auto;
+  height: 515px;
+  overflow: hidden;
 }
 
 .news .news__items .news-item__wrap {
   min-width: 0;
-  width: 380px;
-  margin: 20px;
+  width: 340px !important;
+  margin: 10px;
   background-color: #eaeaea;
   font-family: "Montserrat", serif;
   color: #555555;
@@ -686,7 +729,7 @@ header {
 }
 
 .news .news__items .news-item__wrap .news-item__btn a:hover {
-  border-bottom: 3px solid #afc67b;
+  border-bottom: 4px solid #afc67b;
 }
 
 .social__media {
@@ -740,8 +783,8 @@ header {
 }
 
 .social__media .social__icon svg:hover {
-  -webkit-animation: svg-animation 1.2s infinite;
-          animation: svg-animation 1.2s infinite;
+  -webkit-animation: svg-animation .8s forwards;
+          animation: svg-animation .8s forwards;
 }
 
 .footer .footer__row {
@@ -822,6 +865,8 @@ header {
   to {
     -webkit-box-shadow: 0px 0px 20px 1px #afc67b;
             box-shadow: 0px 0px 20px 1px #afc67b;
+    fill: #afc67b;
+    background: #fff;
   }
 }
 
@@ -833,18 +878,18 @@ header {
   to {
     -webkit-box-shadow: 0px 0px 20px 1px #afc67b;
             box-shadow: 0px 0px 20px 1px #afc67b;
+    fill: #afc67b;
+    background: #fff;
   }
 }
 
-.slider {
-  position: relative;
-}
-
-.slider .slider__item {
-  position: relative;
-  width: 100px;
-  height: 250px;
-  background-color: #afc67b;
-  border: 2px solid #000;
+.fon img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 /*# sourceMappingURL=style.css.map */
