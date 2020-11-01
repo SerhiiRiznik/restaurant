@@ -3,25 +3,25 @@ $(document).ready(function () {
 
    $('.slider').slick({
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToShow: 4,
+      slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 2000,
       centerMode: true,
       variableWidth: true,
       responsive: [
-
          {
-            breakpoint: 500,
+            breakpoint: 900,
             settings: {
-
-               slidesToShow: 1,
-               slidesToScroll: 1,
+               slidesToShow: 2,
+               slidesToScroll: 2,
             }
          }
       ]
    });
-});// slider slick
+});
+
+// slider slick
 
 
 // mobile navigation
@@ -38,7 +38,7 @@ mobNavNumb.addEventListener('click', function () {
 
 
 
-
+//scroll header
 document.addEventListener('scroll', () => {
    const header = document.querySelector('.header')
    let headerScroll = window.scrollY
@@ -50,6 +50,6 @@ document.addEventListener('scroll', () => {
       header.style.height = '100px'
       header.style.background = '#4e534200'
    }
-})
+})//scroll header
 
 
