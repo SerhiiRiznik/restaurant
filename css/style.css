@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .header__logo {
-  height: -webkit-fill-available;
+  height: 100px;
 }
 
 .header .header__nav .header__nav__list {
