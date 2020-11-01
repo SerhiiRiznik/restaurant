@@ -17,42 +17,58 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <!-- navigation -->
-                <div class="nav__item">
-                    <ul>
-                        <li><a>welcome</a></li>
-                        <li><a>menu</a></li>
-                        <li><a>events</a></li>
-                        <li><a>contact</a></li>
-                    </ul>
-                </div>
-            </nav> <!-- //navigation -->
-            <!--mabile  navigation -->
-            <div class="mobile__nav">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+    <header class="header container">
+        <img class="header__logo" src="./img/header_logo.png" alt="">
+        <nav class="header__nav">
+            <!-- navigation -->
+
+            <ul class="header__nav__list">
+                <li class="header__nav__item"><a href="#">welcome</a></li>
+                <li class="header__nav__item"><a href="#">menu</a></li>
+                <li class="header__nav__item"><a href="#">events</a></li>
+                <li class="header__nav__item"><a href="#">contact</a></li>
+            </ul>
+
+        </nav> <!-- //navigation -->
+        <!--mabile  navigation -->
+        <div class="header__mobile__nav">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <!-- mabile  navigation -->
-            <div class="content">
-                <a class="header__logo" href=""><img src="./img/header_logo.png" alt="headerLog"></a>
-                <div class="tittle">
-                    <!-- tittle  -->
-                    <p>new opening</p>
-                    <h2>23rd sept</h2>
-                </div> <!-- tittle -->
-                <a class="header__link" href="">learn more</a>
-            </div>
+            <ul class="mobile__nav__list">
+                <li class="mobile__nav__item"><a href="#">welcome</a>
+                </li>
+                <li class="mobile__nav__item"><a href="#">menu</a>
+                </li>
+                <li class="mobile__nav__item"><a href="#">events</a>
+                </li>
+                <li class="mobile__nav__item"><a href="#">contact</a>
+                </li>
+            </ul>
+
         </div>
+        <!-- mabile  navigation -->
+
+
     </header>
+    <section class="">
+        <div class="content">
+
+            <div class="tittle">
+                <!-- tittle  -->
+                <p>new opening</p>
+                <h2>23rd sept</h2>
+            </div>
+            <!-- tittle -->
+            <a class="header__link" href="#">learn more</a>
+        </div>
+    </section>
+
+
     <!-- What-we-cook -->
-    <section class="What-we-cook container">
+    <section class="what-we-cook container">
         <div class="actually__cook">
             <div class="actually__cook__text">
                 <h2>What do we actually cook?</h2>
@@ -167,9 +183,9 @@
         </div>
     </section><!-- //things__simple -->
     <!-- discover -->
-    <section class="discover__menu-bg">
+    <section id="menu" class="discover__menu-bg">
         <div class="discover__menu container">
-            <div class="menu__tittle  bg-green">
+            <div class="menu__tittle">
                 <h2>
                     Discover
                 </h2>
@@ -177,7 +193,7 @@
                     our new menu
                 </p>
             </div>
-            <div class="menu__list  bg-green">
+            <div class="menu__list  ">
                 <ul class="menu__list__wrap">
                     <li class="menu__list__item">
                         <img src="./img/menu_/nigiri1.gif" alt="">
@@ -252,12 +268,12 @@
             </div>
             <div class="form__item">
                 <label for="time">Time</label>
-                <input type="time" name="time" id="" value="00:00">
+                <input type="time" name="time" value="00:00">
             </div>
             <div class="form__item"><span>Name</span><input type="text" placeholder="Full name"></div>
-            <div class="form__item"><span>Email</span><input type="email" name="email" id=""
-                    placeholder="Your email address"></div>
-            <div class="form__item"><span>Phone</span><input type="tel" name="tel" id="" placeholder="Your phone"></div>
+            <div class="form__item"><span>Email</span><input type="email" name="email" placeholder="Your email address">
+            </div>
+            <div class="form__item"><span>Phone</span><input type="tel" name="tel" placeholder="Your phone"></div>
             <div class="form__item">
                 <input class="btn-submit" type="submit" value="submit">
             </div>
