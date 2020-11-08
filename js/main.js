@@ -86,14 +86,17 @@ menu.addEventListener('click', function (e) {
 //scroll header
 document.addEventListener('scroll', () => {
    const header = document.querySelector('.header')
+   const headerLogo = document.querySelector('.header__logo')
    let headerScroll = window.scrollY
 
    if (headerScroll >= 10) {
       header.style.height = '60px'
       header.style.background = '#4e5342'
+      headerLogo.style.width = '60px'
    } else {
       header.style.height = '100px'
       header.style.background = '#4e534200'
+      headerLogo.style.width = '100px'
    }
 })//scroll header
 
