@@ -23,13 +23,12 @@ $(document).ready(function () {
 
 // slider slick
 
-// --------------------------------------------------------
+
+// --------------------mobile navigation------------------------------------
 const btnMenu = document.querySelector('.hamburger');
 const menu = document.querySelector('.mobile__nav__list');
 const menuItems = document.querySelectorAll('.mobile__nav__item');
 const body = document.querySelector('body');
-
-
 
 const toggleMenu = function () {
    menu.classList.toggle('open');
@@ -41,16 +40,13 @@ btnMenu.addEventListener('click', function (e) {
    e.stopPropagation();
    toggleMenu();
 });
+
 menu.addEventListener('click', function (e) {
-
    if (e.target.nodeName !== 'A') {
-
       toggleMenu()
-
    }
-});
+}); // mobile navigation
 
-// mobile navigation
 
 
 
@@ -70,5 +66,3 @@ document.addEventListener('scroll', () => {
       headerLogo.style.width = '100px'
    }
 })//scroll header
-
-
