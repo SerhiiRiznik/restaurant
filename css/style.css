@@ -160,6 +160,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .3s ease-in;
 }
 
+.header .header__logo {
+  width: 100px;
+}
+
 .header .header__nav .header__nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
