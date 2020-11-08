@@ -23,28 +23,6 @@ $(document).ready(function () {
 
 // slider slick
 
-
-// mobile navigation
-// let mobNavHumb = document.querySelector('.hamburger');
-// const mobNavList = document.querySelector('.mobile__nav__list')
-
-// mobNavHumb.addEventListener('click', function (e) {
-
-//    mobNavList.classList.toggle('active')
-//    document.body.style.overflow = 'hidden';
-
-//    document.addEventListener('click', (e) => {
-
-//       if (e.target != mobNavList) {
-//          mobNavList.classList.remove('active')
-//          document.body.style.overflow = null;
-//       }
-
-
-
-
-//    })
-// })
 // --------------------------------------------------------
 const btnMenu = document.querySelector('.hamburger');
 const menu = document.querySelector('.mobile__nav__list');
@@ -63,13 +41,6 @@ btnMenu.addEventListener('click', function (e) {
    e.stopPropagation();
    toggleMenu();
 });
-
-// for (let i = 0; i < menuItems.length; i++) {
-//    let j = menuItems[i];
-
-
-// }
-
 menu.addEventListener('click', function (e) {
 
    if (e.target.nodeName !== 'A') {

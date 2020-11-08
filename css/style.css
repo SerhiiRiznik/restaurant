@@ -227,8 +227,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .header__mobile__nav .mobile__nav .mobile__nav__list {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   position: absolute;
   top: 0;
   right: 0;
