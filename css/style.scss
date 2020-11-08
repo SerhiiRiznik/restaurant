@@ -492,7 +492,7 @@ $color_subMain: rgb(208, 243, 127);
 .discover__menu-bg{
       background: url(../img/keepThingsSimpl_bg.jpg) 100% 100% no-repeat;
       background-size: contain;
-      background-attachment: fixed;
+      // background-attachment: fixed;
       width: 100%;
       position: relative;
       &::after{
