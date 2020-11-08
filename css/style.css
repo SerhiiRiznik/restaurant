@@ -548,7 +548,6 @@ h1, h2, h3, h4, h5, h6 {
 .discover__menu-bg {
   background: url(../img/keepThingsSimpl_bg.jpg) 100% 100% no-repeat;
   background-size: contain;
-  background-attachment: fixed;
   width: 100%;
   position: relative;
 }
