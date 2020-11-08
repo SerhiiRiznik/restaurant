@@ -546,7 +546,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .discover__menu-bg {
-  background: url(../img/keepThingsSimpl_bg.jpg) no-repeat 100% 100%;
+  background: url(../img/keepThingsSimpl_bg.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -648,7 +648,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg__ {
-  background: url(../img/bg_03.jpg) no-repeat 100% 100%;
+  background: url(../img/bg_03.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
